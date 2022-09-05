@@ -1,25 +1,19 @@
+import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 const Header = () =>{
     return (
-         <div className='container'> 
-           <Nav defaultActiveKey="/home" as="ul">
-          <Nav.Item as="li">
-            <Nav.Link href="/">Home</Nav.Link>
-          </Nav.Item>
-          
-          <Nav.Item as="li">
-            <Nav.Link href="/blog">Blog</Nav.Link>
-          </Nav.Item>
-
-          <Nav.Item as="li">
-            <Nav.Link href="/about">About Us</Nav.Link>
-          </Nav.Item>
-          <Nav.Item as="li"> 
-            <Nav.Link href="/contact">Contac Us</Nav.Link>
-          </Nav.Item>
+      <Navbar bg="primary" variant="dark" >
+      <Container>
+        <Nav className="me-auto">
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/blog"> Our  Blog</Nav.Link>
+          <Nav.Link href="/about">About Us</Nav.Link>
+          <Nav.Link href="/contact">Contact Us</Nav.Link>
         </Nav>
-         </div>
+      </Container>
+    </Navbar>
        
       );
 }

@@ -1,10 +1,15 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Head from 'next/head'
 
 const Contact =  ()=>{
     return (
-        <Form>
+         <> 
+                   <Head>
+            <title>Conact</title>
+           </Head>
+<Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
@@ -17,7 +22,7 @@ const Contact =  ()=>{
           <FloatingLabel controlId="floatingTextarea2" label="Comments">
         <Form.Control
           as="textarea"
-          placeholder="Lets chat"
+          placeholder="comments"
           style={{ height: '100px' }}
         />
       </FloatingLabel>
@@ -29,6 +34,8 @@ const Contact =  ()=>{
             Submit
           </Button>
         </Form>
+         </>
+        
       );
 }
 
