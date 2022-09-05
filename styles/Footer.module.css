@@ -1,0 +1,22 @@
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(44, 116, 199);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.icon{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon i{
+     cursor: pointer;
+}
