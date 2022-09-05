@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Carousels from '../components/carousel'
+import Youtube from '../components/youtube'
 
 
 
@@ -26,7 +27,7 @@ export default function Home() {
         <br/>
         <br/>
         <br/>
-        
+        <Youtube/>
 
       </main>
     </div>
